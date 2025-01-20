@@ -11,7 +11,7 @@ body{
 
 /* nav-section */
 .nav-section{
-    width: 1280px;
+    width: 1200px;
     height: 100px;
     margin: 0px auto;
     box-sizing: border-box;
@@ -78,7 +78,7 @@ ul li a{
 
 /* hero-section */
 .hero-section{
-    width: 1280px;
+    width: 1200px;
     height: 600px;
     margin: 0 auto;
     display: flex;
@@ -86,7 +86,7 @@ ul li a{
     align-items: center;
 }
 .hero-section .left-side{
-    height: 350px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -94,10 +94,12 @@ ul li a{
 .hero-section .left-side .title{
     font-size: 3.5rem;
     font-weight: 700;
+    margin-bottom: 25px;
 }
 .hero-section .left-side .description{
     font-size: 1.2rem;
     line-height: 25px;
+    margin-bottom: 25px;
 }
 .hero-section .left-side button{
     height: 50px;
@@ -115,8 +117,88 @@ ul li a{
     color: rgb(1, 172, 253);
 }
 
+/* card-section */
+.card-section{
+    margin-top: 40px;
+    background-image: url(./assets/bg.png);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+}
+.card-section> .title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px;
+}
 
-/* media-query */
+.card-section .card-list{
+    width: 1200px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap : 60px
+}
+.card-section .card{
+    height: 450px;
+}
+.card-list .card .card-text{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.card-list .card .title{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.card-list .card{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    box-sizing: border-box;
+}
+.btn1, .btn2, .btn3{
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.btn1{
+    color : rgb(100, 200, 255)
+}
+.btn2{
+    color : rgb(240, 170, 0)
+}
+.btn3{
+    color: rgb(135, 0, 255)
+}
+
+.card-section .card1{
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.card-section .card3{
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.card-section .card2{
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+/* media-query  for mobile screen*/
 
 @media (max-width: 576px){
     body{
@@ -127,8 +209,12 @@ ul li a{
     /* nav-section */
     .nav-section{
         width: 500px;
-        height: 60px;
-        margin: 20px auto;
+        height: 100px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    header{
+        border-bottom: 2px solid orange;
     }
     .logo p, .links, .btn{
         display: none;
@@ -150,26 +236,27 @@ ul li a{
     /* hero-section */
     .hero-section{
         width: 500px;
-        height: 100%;
-        margin-top: 20px;
+        height: 1020px;
+        margin: 30px auto;
         flex-direction: column-reverse;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
     .hero-section .left-side{
         margin-top: 20px;
         box-sizing: border-box;
         align-items: center;
+        
     }
     .hero-section .left-side .title{
         font-size: 3em;
         text-align: center;
-        margin-bottom: 20px ;
+        margin-bottom: 30px ;
         line-height: 60px;
     }
     .hero-section .left-side .description{
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         line-height: 30px;
     }
     .hero-section .left-side button{
@@ -177,4 +264,10 @@ ul li a{
         width: 150px;
     }
     
+    .card-section .card-list{
+        width: 500px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
