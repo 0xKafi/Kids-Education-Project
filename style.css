@@ -100,7 +100,7 @@ ul li a{
     line-height: 25px;
 }
 .hero-section .left-side button{
-    height: 40px;
+    height: 50px;
     width: 150px;
     color: white;
     font-weight: 600;
@@ -119,6 +119,12 @@ ul li a{
 /* media-query */
 
 @media (max-width: 576px){
+    body{
+        width: 576px;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+    /* nav-section */
     .nav-section{
         width: 500px;
         height: 60px;
@@ -135,9 +141,40 @@ ul li a{
         height: 60px;
     }
     .logo{
-        width: 100%;
+        width: 500px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
+    /* hero-section */
+    .hero-section{
+        width: 500px;
+        height: 100%;
+        margin-top: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .hero-section .left-side{
+        margin-top: 20px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    .hero-section .left-side .title{
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 20px ;
+        line-height: 60px;
+    }
+    .hero-section .left-side .description{
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+    .hero-section .left-side button{
+        height: 60px;
+        width: 150px;
+    }
+    
 }
