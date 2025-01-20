@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Quicksand;
+}
+
+/* nav-section */
+.nav-section{
+    width: 1280px;
+    height: 100px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo i{
+    display: none;
+}
+.logo img{
+    height: 50px;
+}
+.logo p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.links{
+    width: 30%;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn{
+    height: 40px;
+    width: 150px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background: rgb(254, 163, 1);
+}
+.home{
+    color: orange;
+}
+.about{
+    color: skyblue;
+}
+.facilities{
+    color: rgb(5, 212, 223);
+}
+.admission{
+    color: rgb(93, 88, 239);
+}
+
+/* hero-section */
+.hero-section{
+    width: 1280px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-section .left-side{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hero-section .left-side .title{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.hero-section .left-side .description{
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+.hero-section .left-side button{
+    height: 40px;
+    width: 150px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+}
+.hero-section .left-side .title1{
+    color: orange;
+}
+.hero-section .left-side .title2{
+    color: rgb(1, 172, 253);
+}
+
+
+/* media-query */
+
+@media (max-width: 576px){
+    .nav-section{
+        width: 500px;
+        height: 60px;
+        margin: 20px auto;
+    }
+    .logo p, .links, .btn{
+        display: none;
+    }
+    .logo .fa-bars{
+        display: inline;
+        font-size: 40px;
+    }
+    .logo img{
+        height: 60px;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
