@@ -197,15 +197,138 @@ ul li a{
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
 }
+.card-section-btn{
+    width: 130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-btn, .right-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+}
+.card-section-btn .fa-solid{
+    font-size: 1.5rem;
+}
+
+/* our-stories-section */
+
+.our-stories-section{
+    margin-top: 100px;
+    height: 900px;
+    width: 100%;
+    background-size: cover;
+    background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%), url(./assets/bg.png);
+}
+.our-stories-section> .title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.our-stories-section .our-stories-card-list{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "card1 card1 card2 card3"
+    "card1 card1 card4 card5";
+}
+.our-stories-section .card-2, .card-3, .card-4, .card-5{
+    height: 300px;
+    width: 260px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.our-stories-section .card-2 img,  .card-3 img,  .card-4 img,  .card-5 img{
+    width: 260px;
+    border-radius: 10px 10px 0 0;
+}
+.our-stories-section .card-2 p, .card-3 p, .card-4 p, .card-5 p{
+    font-weight: 700;
+    padding: 40px 30px 30px;
+    font-size: 0.9  rem;
+}
+.our-stories-section .card-2{
+    grid-area: card2;
+}
+.our-stories-section .card-3{
+    grid-area: card3;
+}
+.our-stories-section .card-4{
+    grid-area: card4;
+}
+.our-stories-section .card-5{
+    grid-area: card5;
+}
+
+.our-stories-section .card-1{
+    grid-area: card1;
+    height: 640px;
+    width: 540px;
+    background-color: white;
+    border-radius: 15px;
+}
+.our-stories-section .card-1 img{
+    width: 540px;
+    border-radius: 15px 15px 0 0;
+}
+.our-stories-section .card-1 .card-1-text-box{
+    height: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.our-stories-section .card-1 .title{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.our-stories-section .view-all-btn{
+    margin: 20px auto;
+    width: 160px;
+    height: 50px;
+}
+.our-stories-section button{
+    height: 40px;
+    width: 160px;
+    color: white;
+    font-family: Quicksand;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 12px;
+    background: rgb(0, 0, 0);
+}
+
+
+
 
 /* media-query  for mobile screen*/
 
 @media (max-width: 576px){
     body{
         width: 576px;
-        height: 100vh;
         box-sizing: border-box;
     }
+
+    /* display none section */
+    .logo p, .links, .btn, .card-section-btn, .our-stories-section .our-stories-card-list .card-1{
+        display: none;
+    }
+
     /* nav-section */
     .nav-section{
         width: 500px;
@@ -215,9 +338,6 @@ ul li a{
     }
     header{
         border-bottom: 2px solid orange;
-    }
-    .logo p, .links, .btn{
-        display: none;
     }
     .logo .fa-bars{
         display: inline;
@@ -263,11 +383,50 @@ ul li a{
         height: 60px;
         width: 150px;
     }
-    
+
+    .card-section{
+        background-image: url(./assets/bg.png);
+        height: 100%;
+        width: 500px;
+        margin: 50px auto;
+        background-size: cover;
+    }
     .card-section .card-list{
         width: 500px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 
+
+    /* our-stories-section */
+    .our-stories-section{
+        margin-top: 60px;
+        height: 820px;
+        width: 576px;
+        background-size: cover;
+        background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%), url(./assets/bg.png);
+    }
+
+    .our-stories-section .our-stories-card-list{
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .our-stories-section .card-2, .card-3, .card-4, .card-5{
+        height: 276px;
+        width: 240px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .our-stories-section .card-2 img,  .card-3 img,  .card-4 img,  .card-5 img{
+        width: 240px;
+        border-radius: 10px 10px 0 0;
+    }
+    .our-stories-section .card-2 p, .card-3 p, .card-4 p, .card-5 p{
+        font-weight: 700;
+        padding: 20px;
+        font-size: 0.25 rem;
+    }
 }
