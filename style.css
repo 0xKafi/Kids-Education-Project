@@ -506,62 +506,66 @@ footer .footer-section-2{
 
     /* footer-section */
     footer{
-        height: 800px;
+        height: 760px;
         color: white;
         background-color: rgb(1, 172, 253);
     }
     .footer-section{
         width: 500px;
-        height: 600px;
+        height: 700px;
         margin: 0 auto;
-        padding: 100px 0;
+        padding: 50px 0 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
     }
     footer .section-1-logo img{
-        height: 70px;
+        height: 80px;
         margin-right: 10px;
     }
     footer .section-1-logo .title{
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 700;
-        line-height: 35px;
+        line-height: 40px;
     }
     footer .section-1-logo{
         display: flex;
         justify-content: flex-start;
     }
     footer .footer-section-1{
-        height: 180px ;
+        height: 300px ;
         width: 300px;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     footer .footer-section-1 p{
+        font-size:  1.1rem;
         margin-left: 10px;
         line-height: 25px;
     }
     footer .footer-section-2{
         width: 300px;
-        height: 150px;
+        height: 200px;
         margin-left: 10px;
+        margin-bottom: 30px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     
     .footer-section-2 p{
         font-weight: 600;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
     }
     .footer-section-2 ul{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 120px;
+        height: 140px;
     }
     .footer-section-2 li{
         list-style: none;
@@ -569,18 +573,19 @@ footer .footer-section-2{
     .footer-section-2 ul li a{
         color: white;
         text-decoration: none;
+        font-size: 1.1rem;
     }
     .footer-section-3{
         margin-left: 10px;
-        height: 160px;
+        height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
     .footer-section-3 p{
         font-weight: 600;
-        font-size: 1.2rem;
-        margin-bottom: 20px;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
     }
     
 }
